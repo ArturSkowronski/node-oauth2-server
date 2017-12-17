@@ -1,33 +1,5 @@
 ## Changelog
 
-### 3.0.0
-* Complete re-write, with Promises and callback support
-* Dropped support for node v0.8, v0.10, v0.12
-* Supports Node v4, v6, v7, and v8.  Will continue support for node current and active LTS versions
-* For migration guide, see https://oauth2-server.readthedocs.io/en/latest/misc/migrating-v2-to-v3.html
-
-### 2.4.1
-
-- Fix header setting syntax
-- Fix docs for supported grant types
-
-### 2.4.0
-
-- Set Cache-Control and Pragma headers
-- Allow any valid URI for extension grants
-- Expose `client` to `extendedGrant` and after via `req.oauth.client`
-- Fix express depreciation warning for `res.send()`
-- Expose `user` to `generateToken` and after via `req.user`
-- Fix lockdown pattern for express 3
-
-- Add redis example
-- Fix docs to use new express bodyParser module
-- Fix docs for `redirect_uri`
-- Clarify docs for `clientIdRegex`
-- Fix docs for missing `req` argument in `generateToken`
-- Fix docs for `user`/`userId` `getAccessToken`
-- Fix docs for argument order in `getRefreshToken`
-
 ### 2.3.0
 
  - Support "state" param for auth_code grant type
